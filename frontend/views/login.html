@@ -1,0 +1,47 @@
+<main class="wrapper">
+
+    <div class="app-title">
+        <h1>SpendMate Expenses Tracker</h1>
+    </div>
+
+    <h2>Login</h2>
+    <form id="loginForm">
+        <div class="input-box">
+            <input type="text" name="username" placeholder="Username" required>
+        </div>
+        <div class="input-box">
+            <input type="password" name="password" placeholder="Password" required>
+        </div>
+
+        <h3>Forgot your password? <a href="#forgot-password">Reset here</a></h3>  
+        
+        <div class="input-box button">
+            <input type="submit" value="Login Now">
+        </div>
+
+        <div class="text">
+            <h3>Don't have an account? <a href="#register">Register now</a></h3> 
+        </div>
+    </form>
+    
+</main>
+<script>
+    $(document).ready(function() {
+    $('#loginForm').submit(function(event) {
+        event.preventDefault(); // Prevent the default form submission
+        // Perform your validation and AJAX request here
+
+        // Dummy check to simulate successful login
+        var username = $("input[name='username']").val();
+        var password = $("input[name='password']").val();
+
+        if(username && password) { // Suppose login is successful
+            window.location.hash = '#dashboard'; // Navigate to dashboard
+        } else {
+            alert("Please enter valid credentials.");
+        }
+    });
+});
+</script>
+
+

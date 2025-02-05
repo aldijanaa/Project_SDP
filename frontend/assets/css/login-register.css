@@ -1,0 +1,115 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Page Background */
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+}
+
+/* Wrapper for Login Form */
+.wrapper {
+  position: relative;
+  max-width: 430px;
+  width: 100%;
+  background: #fff;
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  text-align: center; /* Centers content */
+}
+
+/* App Title Section */
+.app-title {
+  margin-bottom: 20px;
+}
+
+/*text: spendmate expense tracker*/
+.app-title h1 {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+  color: #4070f4;
+}
+
+
+/* Login Form */
+.wrapper h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+.wrapper form {
+  margin-top: 20px;
+}
+
+.wrapper form .input-box {
+  height: 52px;
+  margin: 18px 0;
+}
+
+form .input-box input {
+  height: 100%;
+  width: 100%;
+  padding: 0 15px;
+  font-size: 17px;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.input-box input:focus {
+  border-color: #4070f4;
+}
+
+.input-box.button input {
+  color: #fff;
+  background: #4070f4;
+  cursor: pointer;
+}
+
+.input-box.button input:hover {
+  background: #0e4bf1;
+}
+
+/* Links and Text */
+form .text h3 {
+  color: #333;
+  text-align: center;
+}
+
+form .text h3 a {
+  color: #4070f4;
+  text-decoration: none;
+}
+
+form .text h3 a:hover {
+  text-decoration: underline;
+}
+
+
+/*register*/
+/* Links and Text */
+form .text h3 {
+  color: #333;
+  text-align: center;
+}
+
+form .text h3 a {
+  color: #4070f4;
+  text-decoration: none;
+}
+
+form .text h3 a:hover {
+  text-decoration: underline;
+}

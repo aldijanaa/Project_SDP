@@ -1,0 +1,46 @@
+<main class="wrapper">
+    <div class="profile-container">
+        <!-- Profile Header -->
+        <div class="profile-header">
+            <h2>Profile</h2>
+            <p>Welcome to SpendMate Expense Tracker</p>
+            <div class="profile-actions">
+                <button id="toggleDarkMode">🌙 Dark Mode</button>
+            </div>
+        </div>
+
+        <!-- Profile Content -->
+        <div class="profile-content">
+            <!-- User Info -->
+            <div class="profile-card">
+                <img src="frontend/assets/images/user-profile.png" alt="User Profile">
+                <h3>Aldijana A</h3>
+                <p class="email">aldijana@example.com</p>
+                <div class="user-meta">
+                    <p><strong>Registered:</strong> 12 March 2024</p>
+                    <p><strong>Account Type:</strong> Premium</p>
+                    <p><strong>Address:</strong> 123 Street Name, City</p>
+                    <p><strong>Date of Birth:</strong> 15 August 1995</p>
+                </div>
+            </div>
+
+            <!-- Recent Notifications -->
+            <div class="notification-panel">
+                <h3>Recent Notifications</h3>
+                <ul class="notification-list">
+                    <li><span class="success">✔</span> Account created successfully <small>2024-11-04 12:00:23</small></li>
+                    <li><span class="error">✖</span> 2FA verification failed <small>2024-11-04 12:00:23</small></li>
+                    <li><span class="success">✔</span> Device confirmation completed <small>2024-11-04 12:00:23</small></li>
+                    <li><span class="warning">⚠</span> Phone verification pending <small>2024-11-04 12:00:23</small></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Dark/Light Mode -->
+<script>
+    document.getElementById('toggleDarkMode').addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+    });
+</script>

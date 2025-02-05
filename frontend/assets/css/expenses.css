@@ -1,0 +1,65 @@
+/* Expenses Page Specific Styles */
+.wrapper {
+    width: 80%;
+    max-width: 1200px; /* Adjusted for wider view */
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px auto; /* Center the wrapper horizontally */
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.expenses-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.expenses-header select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px; /* Ensure readability */
+}
+
+.total-expenses h2 {
+    font-size: 24px;
+    color: #4070f4;
+    margin-bottom: 10px;
+}
+
+.expenses-list {
+    border-top: 1px solid #f0f0f0;
+    margin-top: 20px;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.expense-item:last-child {
+    border-bottom: none;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.pagination span {
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.pagination .active {
+    font-weight: bold;
+}
