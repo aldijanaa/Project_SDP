@@ -1,0 +1,145 @@
+/* Profile Page Styling */
+.wrapper {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-header h2 {
+    font-size: 24px;
+    color: #2C3E50;
+}
+
+.profile-header p {
+    font-size: 14px;
+    color: #666;
+}
+
+.profile-actions {
+    text-align: right;
+}
+
+.profile-actions button {
+    background: #4070f4;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.profile-actions button:hover {
+    background: #3050d0;
+}
+
+/* Profile Content */
+.profile-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.profile-card {
+    flex: 1;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.profile-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-card h3 {
+    font-size: 20px;
+    color: #2C3E50;
+}
+
+.profile-card .email {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.user-meta p {
+    font-size: 14px;
+    color: #444;
+    margin: 5px 0;
+}
+
+/* Notification Panel */
+.notification-panel {
+    flex: 1;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.notification-panel h3 {
+    font-size: 18px;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+.notification-list {
+    list-style: none;
+    padding: 0;
+}
+
+.notification-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.notification-list small {
+    color: #666;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+.warning {
+    color: orange;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #222;
+    color: white;
+}
+
+.dark-mode .wrapper {
+    background: #333;
+    color: white;
+}
+
+.dark-mode .profile-card, .dark-mode .notification-panel {
+    background: #444;
+}
+
+.dark-mode .profile-header h2, .dark-mode .profile-card h3, .dark-mode .notification-panel h3 {
+    color: white;
+}

@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My First Web Page</title>
+    <link rel="stylesheet" href="frontend/assets/css/spapp.css">
+    <link rel="stylesheet" href="frontend/assets/css/style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>   <!--loading charts for dahsboard.html page-->
+    <title>SpendMate Expenses Tracker</title>
 </head>
 <body>
-    <h1>Welcome to my first web page!</h1>
-    <p>This is a paragraph.</p>
-    <p>This is another paragraph.</p>
+    <!-- Navigation (HEADER) -->
+    <header class="top-nav" id="globalNav" style="display: none;"> <!-- Initially hidden -->
+        <div class="app-name">SpendMate Expense Tracker</div> <!-- Left side -->
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="#dashboard">Overview</a>
+                <a href="#expenses">Expenses</a>
+                <a href="#savings" >Savings</a>
+            </div>
+            <div class="user-profile">
+                <img src="frontend/assets/images/user-profile.png" alt="User Profile">
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="#viewprofile">View Profile</a>
+                    <a href="#logout">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="frontend/assets/js/javascript/dashboard.js"></script>     <!-- Will load only on dashboard view -->
+
+
+    <!-- SPApp Main Content -->
+    <main id="spapp" role="main">
+        <section id="login" data-load="frontend/views/login.html"></section>
+        <section id="register" data-load="frontend/views/register.html"></section>
+        <section id="forgot-password" data-load="frontend/views/forgot-password.html"></section>
+        <!--<section id="reset-password" data-load="frontend/views/forgot-password.html"></section>-- kasnije ovo-->
+        <section id="dashboard" data-load="frontend/views/dashboard.html"></section>
+        <section id="expenses" data-load="frontend/views/expenses.html"></section>
+        <section id="view-profile" data-load="frontend/views/view-profile.html"></section>
+    </main>
+
+    <!--SPApp Import -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="frontend/assets/js/spapp/jquery.spapp.min.js"></script>
+    <script src="frontend/assets/js/spapp/jquery.spapp.js"></script>
+    <script src="frontend/assets/js/spapp/script.js"></script>
+
+
+    <script src="frontend/assets/js/javascript/view-profile.js"></script>
+
+
+
+
 </body>
 </html>

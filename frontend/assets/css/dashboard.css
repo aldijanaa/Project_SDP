@@ -1,0 +1,113 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Page Background */
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    color: #333;
+}
+
+
+/* Main Content Styles */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    justify-content: space-between; /* Ensure components spread evenly */
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    flex: 1 1 30%; /* Adjust this to change how much space each card can take */
+    min-width: 300px; /* Ensures cards do not get too small on narrower screens */
+    text-align: center;
+    height: auto; /* Adjust height automatically based on content */
+}
+
+.card-title {
+    font-size: 20px;
+    color: #4070f4;
+    margin-bottom: 10px;
+}
+
+.amount {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.chart {
+    height: 200px; /* Placeholder height */
+    background-color: #f0f0f0; /* Placeholder color */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 8px;
+}
+
+table th {
+    background-color: #f0f0f0;
+}
+
+.chart {
+    height: 300px; /* Increase height for better visibility */
+    width: 100%; /* Ensure chart uses full width of its container */
+}
+.charts-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    width: 48%; /* Adjust the width to fit side by side */
+    height: auto;
+}
+
+.quick-access {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #4070f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3050d0;
+}
+
+/* If screens are very wide, prevent cards from stretching too much */
+@media (min-width: 1200px) {
+    .card {
+        flex-basis: 20%; /* Take less space if the screen is very wide */
+    }
+}
